@@ -7,10 +7,10 @@ public class Main {
         Pokemon bulbasaur = new Pokemon("Bulbasaur", "Grass", 10);
 
         // Atack
-        System.out.println(pikachu.name + " attacks " + bulbasaur.name);
+        System.out.println(pikachu.getName() + " attacks " + bulbasaur.getName());
         pikachu.attack(bulbasaur);
 
         System.out.println(bulbasaur.dodge());
-        System.out.println(bulbasaur.name + " has " + bulbasaur.health + " health left");
+        System.out.println(bulbasaur.getName() + " has " + bulbasaur.getHealth() + " health left");
     }
 }
