@@ -22,8 +22,10 @@ If we decide to add more types of creatures in the future, we can use the Creatu
 
 3. **Polymorphism:**
 
+Polymorphism is a concept that allows objects to be treated as instances of their base class, but to behave as instances of
+the derived class when necessary. This allows for more flexible and reusable code.
 You can define different methods for different types of Pokemon. For example, you can create classes for different types of
-Pokemon, such as WaterPokemon, that override the attack method.
+Pokemon, such as WaterPokemon, that override the attack method to have different behaviors. 
 
 4. **Interfaces and Abstraction:**
 
