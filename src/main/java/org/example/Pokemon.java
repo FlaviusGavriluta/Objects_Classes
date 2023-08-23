@@ -1,9 +1,15 @@
 package org.example;
 
 public class Pokemon {
-    String name;
-    String type;
-    int health;
+    public final String name;
+    public final String type;
+    public int health;
+
+    public Pokemon(String name, String type, int health) {
+        this.name = name;
+        this.type = type;
+        this.health = health;
+    }
 
     boolean dodge() {
         return Math.random() > .5;
