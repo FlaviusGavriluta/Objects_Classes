@@ -15,7 +15,10 @@ fields. This encourages good programming practices.
 2. **Inheritance:**
 
 You can introduce a base class, such as Creature, from which Pokemon can inherit. This helps you understand
-how inheritance works in OOP.
+how inheritance works in OOP. Inheritance allows a class to 'inherit' properties and methods from another class.
+This will help us organize the code and share common behavior among different entities. By using inheritance,
+we have isolated common properties in a base class and made the code more organized and extensible.
+If we decide to add more types of creatures in the future, we can use the Creature class as a base.
 
 3. **Polymorphism:**
 
