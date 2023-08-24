@@ -58,6 +58,20 @@ public class Main {
         makeItFly(bird);
         makeItFly(flyingBird);
         makeItFly(insect);
+
+        System.out.println("--------------------------");
+
+        Pokedex pokedex = new Pokedex();
+        Trainer ash = new Trainer("Ash");
+
+        pokedex.addPokemon(pikachu);
+        pokedex.addPokemon(raichu);
+
+        ash.catchPokemon(bulbasaur);
+        ash.catchPokemon(squirtle);
+
+        pokedex.listPokemons();
+        ash.listPokemons();
     }
 
     public static void makeItFly(Flying flyingEntity) {

@@ -38,10 +38,17 @@ interface. For example, you can have a method that accepts any object that imple
 Interfaces are powerful for defining common behaviors and for allowing interaction between objects that may be very
 different in other respects.
 
-* **Composition:**
+* **Composition & aggregation:**
 
-You can introduce a new class, such as Trainer, that contains Pokemon. This allows you to explore the relationships
-between objects.
+Composition and aggregation are two concepts related to how classes interact and are connected to each other.
+They are important for creating modular and reusable code.
+Composition means that a class is made up of one or more instances of other classes. In this case, the 'composite'
+object controls the lifecycle of its component parts.
+Aggregation is similar to composition, but in this case, the aggregated objects exist independently of the object
+that contains them. Example of Aggregation: Trainer Class
+A Pokemon trainer has Pokemons, but the Pokemons also exist independently of the trainer. This is an aggregation
+relationship. This allows you to explore the relationships between objects.
+
 
 * **Additional Methods and Game Logic:**
 
