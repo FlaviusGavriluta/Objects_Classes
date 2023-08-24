@@ -1,6 +1,6 @@
 package org.example;
 
-public class Pokemon extends Creature {
+public class Pokemon extends Creature implements Battler {
     private String type;
 
     // Constructor
@@ -19,13 +19,16 @@ public class Pokemon extends Creature {
         this.type = type;
     }
 
+    @Override
     public boolean dodge() {
         return Math.random() > .5;
     }
 
-    public void attack(Pokemon enemy) {
+    @Override
+    public void attack(Battler enemy) {
+        System.out.println(getName() + " attacks!");
         if (!enemy.dodge()) {
-            enemy.setHealth(enemy.getHealth() - 1);
+            ((Pokemon) enemy).setHealth(((Pokemon) enemy).getHealth() - 1);
         }
     }
 }

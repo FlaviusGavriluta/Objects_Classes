@@ -6,9 +6,10 @@ public class WaterPokemon extends Pokemon {
     }
 
     @Override
-    public void attack(Pokemon enemy) {
+    public void attack(Battler enemy) {
         System.out.println(getName() + " splashes water!");
         if (!enemy.dodge())
-            enemy.setHealth(enemy.getHealth() - 2);
+            if (enemy instanceof Pokemon)
+                ((Pokemon) enemy).setHealth(((Pokemon) enemy).getHealth() - 2);
     }
 }
