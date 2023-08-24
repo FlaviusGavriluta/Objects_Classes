@@ -30,6 +30,13 @@ Pokemon, such as WaterPokemon, that override the attack method to have different
 4. **Interfaces and Abstraction:**
 
 You can define an interface or an abstract class that describes common behaviors for all creatures.
+Interfaces are a powerful way to define contracts for classes. An interface can declare methods that
+must be implemented by any class that implements the interface.
+Let's introduce an interface called Battler, which will define the methods that any fighting-capable entity must have.
+Interfaces also allow a type of polymorphism, as you can treat objects that implement an interface as instances of that
+interface. For example, you can have a method that accepts any object that implements the Battler interface.
+Interfaces are powerful for defining common behaviors and for allowing interaction between objects that may be very
+different in other respects.
 
 * **Composition:**
 
