@@ -12,4 +12,9 @@ public class WaterPokemon extends Pokemon {
             if (enemy instanceof Pokemon)
                 ((Pokemon) enemy).setHealth(((Pokemon) enemy).getHealth() - 2);
     }
+
+    @Override
+    public void makeSound() {
+        System.out.println(getName() + " splashes water!");
+    }
 }

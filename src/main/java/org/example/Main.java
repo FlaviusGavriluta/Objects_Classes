@@ -3,6 +3,9 @@ package org.example;
 import org.example.Animals.*;
 import org.example.Anime.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void battle(Battler battler1, Battler battler2) {
         battler1.attack(battler2);
@@ -21,13 +24,24 @@ public class Main {
         // Action
         System.out.println("Battles begin!");
         battle(raichu, squirtle);
+        raichu.makeSound();
         battle(squirtle, pikachu);
+        pikachu.makeSound();
         battle(bulbasaur, raichu);
+        bulbasaur.makeSound();
         battle(pikachu, squirtle);
+        squirtle.makeSound();
 
         System.out.println("Healing begins!");
         guardian.heal(raichu);
         guardian.heal(pikachu);
+
+        PokemonCenter center = new PokemonCenter();
+        center.heal(squirtle);
+        List<Pokemon> pokemonList = new ArrayList<>();
+        pokemonList.add(bulbasaur);
+        pokemonList.add(raichu);
+        center.heal(pokemonList);
 
         System.out.println(pikachu.getName() + " has " + pikachu.getHealth() + " health left");
         System.out.println(squirtle.getName() + " has " + squirtle.getHealth() + " health left");

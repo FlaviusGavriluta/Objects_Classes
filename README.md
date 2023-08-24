@@ -26,6 +26,10 @@ Polymorphism is a concept that allows objects to be treated as instances of thei
 the derived class when necessary. This allows for more flexible and reusable code.
 You can define different methods for different types of Pokemon. For example, you can create classes for different types of
 Pokemon, such as WaterPokemon, that override the attack method to have different behaviors. 
+* Overloading (Compile-Time Polymorphism)
+Let's assume we have a PokemonCenter class that can heal Pokemons. It can heal a single Pokemon or multiple at once.
+* Overriding (Runtime Polymorphism)
+Each type of Pokemon may have a specific sound. We can use overriding to achieve this.
 
 4. **Interfaces and Abstraction:**
 
@@ -48,11 +52,3 @@ Aggregation is similar to composition, but in this case, the aggregated objects 
 that contains them. Example of Aggregation: Trainer Class
 A Pokemon trainer has Pokemons, but the Pokemons also exist independently of the trainer. This is an aggregation
 relationship. This allows you to explore the relationships between objects.
-
-
-* **Additional Methods and Game Logic:**
-
-You can add more game logic, such as tournaments between Pokemon, healing, evolution, etc.
-
-If any of these topics seem interesting to you, I can develop an example and provide a detailed explanation.
-Or if you have your own idea or a specific question, I'm happy to help with that!

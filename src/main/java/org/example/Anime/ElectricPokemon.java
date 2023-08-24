@@ -12,4 +12,9 @@ public class ElectricPokemon extends Pokemon {
             if (enemy instanceof Pokemon)
                 ((Pokemon) enemy).setHealth(((Pokemon) enemy).getHealth() - 3);
     }
+
+    @Override
+    public void makeSound() {
+        System.out.println(getName() + " zaps with electricity!");
+    }
 }
