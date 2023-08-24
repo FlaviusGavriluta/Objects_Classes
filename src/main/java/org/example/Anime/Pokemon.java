@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Anime;
 
 public class Pokemon extends Creature implements Battler {
     private String type;

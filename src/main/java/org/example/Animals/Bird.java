@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Animals;
 
 public class Bird extends Animal implements Flying {
     public Bird(String name) {

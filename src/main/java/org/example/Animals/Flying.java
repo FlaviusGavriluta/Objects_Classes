@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Animals;
 
 public interface Flying {
     void fly();

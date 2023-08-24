@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Anime;
 
 public class WaterPokemon extends Pokemon {
     public WaterPokemon(String name, int health) {

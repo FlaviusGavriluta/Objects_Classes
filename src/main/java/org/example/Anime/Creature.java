@@ -1,8 +1,7 @@
-package org.example;
+package org.example.Anime;
 
 public class Creature {
     private String name;
-
     private int health;
 
     public Creature(String name, int health) {

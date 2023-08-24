@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Anime;
 
 public class Dragon extends Creature {
     private String element;
